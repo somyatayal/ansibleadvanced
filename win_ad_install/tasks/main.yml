@@ -1,0 +1,14 @@
+---
+# tasks file for win_ad_install
+#
+#
+- include : install_ad.yaml
+- include : setupad.yaml
+#- include : domainuser.yaml
+#- include : reboot.yaml
+- include : checkconnection.yaml
+#- name: Install AD-Domain Services
+#  win_feature:
+#    name: AD-Domain-Services
+#    state: present
+#

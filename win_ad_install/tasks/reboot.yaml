@@ -1,0 +1,6 @@
+- name: reboot
+  win_reboot:
+    #reboot_timeout: 5400
+#    dns_domain_name: ad1.a5c2.example.opentlc.com
+#    safe_mode_password: jVMijRwLbI02gFCo2xkjlZ9lxEA7bm7zgg==
+

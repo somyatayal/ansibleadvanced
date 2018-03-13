@@ -1,0 +1,17 @@
+
+- name: Setup AD-Domain Services
+  win_domain:
+    dns_domain_name: ad1.a5c2.example.opentlc.com
+    safe_mode_password: jVMijRwLbI02gFCo2xkjlZ9lxEA7bm7zgg== 
+  register: reboot
+
+- debug:
+    var: reboot
+
+- name: reboot
+  win_reboot:
+  when: reboot.reboot_required == true
+#
+#- win_domain:
+#    dns_domain_name: ansible.vagrant
+#        safe_mode_password: password123

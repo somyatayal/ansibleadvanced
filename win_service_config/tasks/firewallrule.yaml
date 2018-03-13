@@ -1,0 +1,10 @@
+- name: Firewall rule to allow SMTP on TCP port 25
+  win_firewall_rule:
+    name: "{{ service_name }}"
+    localport: "{{ local_port }}"
+    action: allow
+    direction: in
+    protocol: "{{ protocol_name }}"
+    state: present
+    enabled: yes
+

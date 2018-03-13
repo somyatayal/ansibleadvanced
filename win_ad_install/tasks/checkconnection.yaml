@@ -1,0 +1,3 @@
+- name: check ad list
+  win_shell: nltest /dclist:ad1.a5c2.example.opentlc.com 
+

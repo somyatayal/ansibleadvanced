@@ -1,0 +1,13 @@
+---
+# tasks file for win_ad_user
+#
+- name: Ensure the list of users get added to domain
+  win_domain_user:
+    name: "{{ item.name }}"
+    firstname: "{{ item.firstname }}"
+    surname: "{{ item.surname }}"
+    password: "{{ item.password }}"
+    state: present
+    upn: "{{ item.upn }}"
+  with_items: "{{ user_info }}"
+

@@ -1,0 +1,8 @@
+---
+# vars file for win_ad_user
+#
+user_info:
+ - {name: 'james', firstname: 'James', surname: 'Jockey', password: 'redhat@123', upn: 'james@ad1.a5c2.example.opentlc.com'}
+ - {name: 'bill', firstname: 'Bill', surname: 'Gates', password: 'redhat@123', upn: 'bill@ad1.a5c2.example.opentlc.com'}
+ - {name: 'mickey', firstname: 'Mickey', surname: 'Mouse', password: 'redhat@123', upn: 'mickey@ad1.a5c2.example.opentlc.com'}
+ - {name: 'donald', firstname: 'Donald', surname: 'Duck', password: 'redhat@123', upn: 'donald@ad1.a5c2.example.opentlc.com'}

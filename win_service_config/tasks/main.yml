@@ -1,0 +1,7 @@
+---
+# tasks file for win_service_config
+#
+#
+- include : chocoinstall.yaml
+- include : startservice.yaml
+- include : firewallrule.yaml
